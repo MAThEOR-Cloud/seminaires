@@ -29,6 +29,10 @@ import { RouterLink, RouterView } from "vue-router";
   <main>
     <router-view />
   </main>
+
+  <footer>
+    footer
+  </footer>
 </template>
 
 <style scoped>
@@ -59,16 +63,27 @@ h1 {
 }
 
 main{
-  padding-left: 15%;
-  padding-right: 15%;
-  padding-top: 5%;
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+footer {
+  padding: 10px;
+  background-color: #333333!important;
+  color: white;
+
 }
 
 @media (min-width: 1024px) {
   #logo-irimas {
     width: 40%;
   }
-}
 
+  main{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
 
 </style>
