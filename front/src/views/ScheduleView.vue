@@ -4,6 +4,6 @@
 
 <template>
   <main>
-    Home
+  	schedule
   </main>
 </template>

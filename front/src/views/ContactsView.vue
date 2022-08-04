@@ -4,6 +4,6 @@
 
 <template>
   <main>
-    Home
+  	contacts
   </main>
 </template>

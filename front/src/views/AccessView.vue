@@ -4,6 +4,6 @@
 
 <template>
   <main>
-    Home
+  	access
   </main>
 </template>
