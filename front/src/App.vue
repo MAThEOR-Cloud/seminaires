@@ -24,8 +24,11 @@ import { RouterLink, RouterView } from "vue-router";
     </b-navbar>
   </div>
 
-  <router-view />
+  <h1>Séminaire des doctorants IRIMAS</h1>
 
+  <main>
+    <router-view />
+  </main>
 </template>
 
 <style scoped>
@@ -33,6 +36,8 @@ import { RouterLink, RouterView } from "vue-router";
 #navbar {
   padding: 10px;
   background-color: #333333!important;
+  box-shadow: 0px 1px 10px black;
+  z-index: 10!important;
 }
 
 #logo-irimas {
@@ -42,6 +47,21 @@ import { RouterLink, RouterView } from "vue-router";
 
 .nav-item {
   font-weight: bold;
+}
+
+h1 {
+  background-color: #386099;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: 1.9em;
+  box-shadow: 0px 1px 10px black;
+}
+
+main{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 5%;
 }
 
 @media (min-width: 1024px) {

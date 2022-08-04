@@ -3,7 +3,5 @@
 </script>
 
 <template>
-  <main>
-  	access
-  </main>
+  access
 </template>

@@ -3,7 +3,5 @@
 </script>
 
 <template>
-  <main>
-  	schedule
-  </main>
+  schedule
 </template>

@@ -3,7 +3,5 @@
 </script>
 
 <template>
-  <main>
-  	contacts
-  </main>
+  contacts
 </template>
