@@ -1,1 +1,1 @@
-# site_s-minaire_doctorants
+# Site du séminaire des doctorants IRIMAS
