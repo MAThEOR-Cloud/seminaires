@@ -5,6 +5,7 @@ COPY package.json ./
 ENV NODE_ENV=production
 RUN npm install
 COPY . .
+ENV NODE_ENV=production
 RUN npm run build
 
 # production stage
