@@ -4,7 +4,7 @@ export default class SeminarService {
 	getAll(): Promise<SeminarModel[]> {
 		return new Promise<SeminarModel[]>((resolve, reject) => {
 			resolve([
-	    	{ id: 1, title: "Le transport optimal 1", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },
+	    	{ id: 1, title: "Le transport optimal, c'est génial!", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },
 	    	{ id: 2, title: "Le transport optimal 2", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },
 	    	{ id: 3, title: "Le transport optimal 3", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },
 	    	{ id: 4, title: "Le transport optimal 4", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },

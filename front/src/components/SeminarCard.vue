@@ -19,16 +19,16 @@ export default {
       <h4 class="mb-0">{{ seminarModel?.title }}</h4>
     </template>
     <b-card-text>
-      Date et {{ seminarModel?.hour }}h{{ seminarModel?.minutes }}
+      <img src="@/assets/calendar3.svg" style="margin-right: 5px;" /> 05/07/2022 à {{ seminarModel?.hour }}h{{ seminarModel?.minutes }}
     </b-card-text>
     <b-card-text>
-      {{ seminarModel?.author }}
+      <img src="@/assets/person-fill.svg" style="margin-right: 5px;" /> {{ seminarModel?.author }}
     </b-card-text>
     <b-card-text>
-      {{ seminarModel?.equip }}
+      <img src="@/assets/people-fill.svg" style="margin-right: 5px;" /> {{ seminarModel?.equip }}
     </b-card-text>
-    <b-link href="#" class="card-link">Abstract</b-link>
-    <b-link href="#" class="card-link">Slides</b-link>
+    <b-link href="#" class="card-link"><img style="width: 32px;" src="@/assets/file-earmark-pdf.svg" /></b-link>
+    <b-link href="#" class="card-link"><img style="width: 32px;" src="@/assets/easel2.svg" /></b-link>
   </b-card>
 </template>
 
