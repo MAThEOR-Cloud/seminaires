@@ -30,7 +30,24 @@ import { RouterLink, RouterView } from "vue-router";
   </main>
 
   <footer>
-    copyright la mère d'Armand
+    <div id="footer-info">
+      <div id="footer-info-contact">
+        <p>
+          IRIMAS – UNIVERSITÉ DE HAUTE-ALSACE<br />
+          12 rue des Frères Lumière,<br />
+          68 093 MULHOUSE Cedex<br />
+        </p>
+        <p>
+          Courriel : direction.irimas@uha.fr
+        </p>
+      </div>
+      <div id="footer-info-logo">
+        <img src="@/assets/Logo-Uha-blanc-300x66.png" />
+      </div>
+    </div>
+    <div id="footer-end">
+      COPYRIGHT © 2022 IRIMAS - INSTITUT DE RECHERCHE EN INFORMATIQUE, MATHÉMATIQUES, AUTOMATIQUE ET SIGNAL | UNIVERSITÉ DE HAUTE-ALSACE
+    </div>
   </footer>
 </template>
 
@@ -39,7 +56,7 @@ import { RouterLink, RouterView } from "vue-router";
 #navbar {
   padding: 10px;
   background-color: #333333!important;
-  box-shadow: 0px 1px 10px black;
+  box-shadow: 0px 1px 5px #111111;
   z-index: 10!important;
   display: flex;
 }
@@ -65,7 +82,7 @@ h1 {
   padding: 30px;
   color: white;
   font-size: 1.9em;
-  box-shadow: 0px 1px 10px black;
+  box-shadow: 0px 1px 5px #111111;
 }
 
 main{
@@ -75,9 +92,29 @@ main{
   flex: auto;
 }
 
-footer {
-  padding: 10px;
+#footer-info {
   background-color: #333333!important;
+  color: white;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer-info-contact {
+  flex: auto;
+  margin-left: 15%;
+}
+
+#footer-info-logo {
+  margin-right: 5%;
+  flex: 1;
+}
+
+
+#footer-end {
+  padding: 10px;
+  background-color: #222222!important;
   color: white;
   text-align: center;
 }
@@ -90,6 +127,10 @@ footer {
   main{
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  #footer-info {
+    flex-direction: row;
   }
 }
 
