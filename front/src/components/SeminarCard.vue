@@ -1,20 +1,31 @@
 <script setup lang="ts">
-
+import SeminarModel from '@/models/SeminarModel'
 </script>
+
+<script lang="ts">
+export default {
+  props: {
+    seminarModel: {
+      type: SeminarModel
+    }
+  }
+}
+</script>
+
 
 <template>
 	<b-card class="seminar-card">
     <template class="card-header" #header>
-      <h4 class="mb-0">Titre du séminaire</h4>
+      <h4 class="mb-0">{{ seminarModel.title }}</h4>
     </template>
     <b-card-text>
-      Date et heure
+      Date et {{ seminarModel.hour }}h{{ seminarModel.minutes }}
     </b-card-text>
     <b-card-text>
-      Auteur
+      {{ seminarModel.author }}
     </b-card-text>
     <b-card-text>
-      Equipe
+      {{ seminarModel.equip }}
     </b-card-text>
     <b-link href="#" class="card-link">Abstract</b-link>
     <b-link href="#" class="card-link">Slides</b-link>
