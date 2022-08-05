@@ -9,7 +9,8 @@ export default class SeminarService {
 	    	{ id: 3, title: "Le transport optimal 3", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },
 	    	{ id: 4, title: "Le transport optimal 4", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },
 	    	{ id: 5, title: "Le transport optimal 5", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },
+	    	{ id: 6, title: "Le transport optimal 6", author: "Armand Ley", equip: "IMTI", hour: 16, minutes: 0, },
 	    ])
-		}).then(x => new Promise(resolve => setTimeout(() => resolve(x), 1000)));
+		});//.then(x => new Promise(resolve => setTimeout(() => resolve(x), 1000)));
 	}
 }

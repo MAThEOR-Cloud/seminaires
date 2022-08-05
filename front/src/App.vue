@@ -6,14 +6,14 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <div>
     <b-navbar id="navbar" toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand to="/">
+      <b-navbar-brand to="/" style="flex: 1;">
         <img src="@/assets/logo-irimas.png" id="logo-irimas" />
       </b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-      <b-collapse id="nav-collapse" is-nav>
-        <b-navbar-nav>
+      <b-collapse id="nav-collapse" is-nav >
+        <b-navbar-nav id="navbar-nav">
           <b-nav-item class="nav-item" to="/">Accueil</b-nav-item>
           <b-nav-item class="nav-item" to="/schedule">Programme</b-nav-item>
           <b-nav-item class="nav-item" to="/advise">Conseils</b-nav-item>
@@ -31,7 +31,7 @@ import { RouterLink, RouterView } from "vue-router";
   </main>
 
   <footer>
-    footer
+    copyright la mère d'Armand
   </footer>
 </template>
 
@@ -42,11 +42,18 @@ import { RouterLink, RouterView } from "vue-router";
   background-color: #333333!important;
   box-shadow: 0px 1px 10px black;
   z-index: 10!important;
+  display: flex;
 }
 
 #logo-irimas {
-  width: 10%;
-  margin-left: 5%;
+  width: 80%;
+}
+
+#navbar-nav {
+  flex: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
 }
 
 .nav-item {
@@ -73,12 +80,12 @@ footer {
   padding: 10px;
   background-color: #333333!important;
   color: white;
-
+  text-align: center;
 }
 
 @media (min-width: 1024px) {
   #logo-irimas {
-    width: 40%;
+    width: 60%;
   }
 
   main{
