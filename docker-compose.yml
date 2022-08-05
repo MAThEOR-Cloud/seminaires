@@ -1,0 +1,20 @@
+version: "3"
+
+networks:
+  traefik-route:
+    external: true
+
+services:
+  front:
+    image: seminaires:latest
+    ports:
+      - 8887:80
+    networks:
+      - traefik-route
+    labels: 
+      - traefik.enable=true
+      - traefik.http.routers.frontsem.rule=Host(`seminaires.matheor.theworkpc.com`) 
+      - traefik.http.routers.frontsem.entrypoints=https 
+      - traefik.http.routers.frontsem.tls=true
+      - traefik.http.routers.frontsem.tls.certresolver=letsencrypt 
+      - traefik.docker.network=traefik-route
