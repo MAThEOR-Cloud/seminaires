@@ -56,7 +56,7 @@ import { RouterLink, RouterView } from "vue-router";
 #navbar {
   padding: 10px;
   background-color: #333333!important;
-  box-shadow: 0px 1px 5px #111111;
+  box-shadow: 0px 1px 2px #111111;
   z-index: 10!important;
   display: flex;
 }
@@ -82,7 +82,8 @@ h1 {
   padding: 30px;
   color: white;
   font-size: 1.9em;
-  box-shadow: 0px 1px 5px #111111;
+  box-shadow: 0px 1px 2px #111111;
+  border-radius: 0px 0px 5px 5px;
 }
 
 main{
@@ -93,6 +94,7 @@ main{
 }
 
 #footer-info {
+  border-radius: 5px 5px 0px 0px;
   background-color: #333333!important;
   color: white;
   display: flex;
@@ -125,8 +127,8 @@ main{
   }
 
   main{
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   #footer-info {

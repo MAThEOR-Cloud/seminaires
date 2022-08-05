@@ -1,7 +1,9 @@
 @import "./base.css";
 
 #app {
+	font-family: Oxygen;
   font-weight: normal;
+  font-size: 1.1em;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
