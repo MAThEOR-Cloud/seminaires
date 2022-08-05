@@ -66,6 +66,7 @@ main{
   padding: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
+  flex: auto;
 }
 
 footer {
