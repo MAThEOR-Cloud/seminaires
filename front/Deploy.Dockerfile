@@ -2,6 +2,7 @@
 FROM node:current-alpine AS build-stage
 WORKDIR . 
 COPY package.json ./
+ENV NODE_ENV=production
 RUN npm install
 COPY . .
 RUN npm run build
