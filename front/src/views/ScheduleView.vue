@@ -1,26 +1,26 @@
 <script lang="ts">
+import { defineComponent } from 'vue'
 import SeminarCard from '@/components/SeminarCard.vue'
-import SeminarModel from '@/models/SeminarModel'
+import type SeminarModel from '@/models/SeminarModel'
 import SeminarService from '@/services/SeminarService'
 
-export default {
+export default defineComponent({
   components: {
     SeminarCard
   },
   data() {
     return {
-      seminars: Array<SeminarModel>,
-      seminarService: SeminarService,
+      seminars: [] as SeminarModel[],
+      seminarService: null as null | SeminarService,
     }
   },
 	mounted () { 
 		this.seminarService = new SeminarService()
-		this.seminarService.getAll().then(value => {
+		this.seminarService.getAll().then( (value: Array<SeminarModel>) => {
 		  this.seminars = value
 		});
-		
 	}
-}
+})
 </script>
 
 <template>

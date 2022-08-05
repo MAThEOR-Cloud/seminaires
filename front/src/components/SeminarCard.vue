@@ -16,16 +16,16 @@ export default {
 <template>
 	<b-card class="seminar-card">
     <template class="card-header" #header>
-      <h4 class="mb-0">{{ seminarModel.title }}</h4>
+      <h4 class="mb-0">{{ seminarModel?.title }}</h4>
     </template>
     <b-card-text>
-      Date et {{ seminarModel.hour }}h{{ seminarModel.minutes }}
+      Date et {{ seminarModel?.hour }}h{{ seminarModel?.minutes }}
     </b-card-text>
     <b-card-text>
-      {{ seminarModel.author }}
+      {{ seminarModel?.author }}
     </b-card-text>
     <b-card-text>
-      {{ seminarModel.equip }}
+      {{ seminarModel?.equip }}
     </b-card-text>
     <b-link href="#" class="card-link">Abstract</b-link>
     <b-link href="#" class="card-link">Slides</b-link>

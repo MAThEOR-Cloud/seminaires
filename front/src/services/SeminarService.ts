@@ -1,4 +1,4 @@
-import SeminarModel from '@/models/SeminarModel'
+import type SeminarModel from '@/models/SeminarModel'
 
 export default class SeminarService {
 	getAll(): Promise<SeminarModel[]> {
