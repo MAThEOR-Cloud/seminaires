@@ -35,7 +35,7 @@ export default {
 <style scoped>
 
 .seminar-card {
-  box-shadow: 0px 0px 5px #aaaaaa;
+  box-shadow: 0px 0px 2px #aaaaaa;
   margin-bottom: 15px;
 }
 

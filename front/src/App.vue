@@ -37,9 +37,6 @@ import { RouterLink, RouterView } from "vue-router";
           12 rue des Frères Lumière,<br />
           68 093 MULHOUSE Cedex<br />
         </p>
-        <p>
-          Courriel : direction.irimas@uha.fr
-        </p>
       </div>
       <div id="footer-info-logo">
         <img src="@/assets/Logo-Uha-blanc-300x66.png" />
