@@ -12,7 +12,8 @@ export default defineComponent({
   data() {
     return {
       contacts: [] as ContactModel[],
-      coordinator: { id: 1, name: "Armand Ley", equip: "Mathématiques", mail: "armand.ley@uha.fr" } as ContactModel,
+      websiteContacts: [] as ContactModel[],
+      coordinator: { id: 1, name: "Armand Ley", equip: "Analyse", mail: "armand.ley@uha.fr" } as ContactModel,
       loading: true,
     }
   },
@@ -25,6 +26,9 @@ export default defineComponent({
 			{ id: 4, name: "", equip: "FOTI", mail: "" },
 			{ id: 5, name: "", equip: "OMEGA", mail: "" },
 		]
+    this.websiteContacts = [
+      { id: 1, name: "Thomas Jacumin", equip: "Analyse", mail: "thomas.jacumin@uha.fr" },
+    ]
 		this.loading = false;
 	}
 })
@@ -40,4 +44,9 @@ export default defineComponent({
   <b-card-group deck>
   	<ContactCard v-for="contact in contacts" :key="contact.id" :contactModel="contact" />
 	</b-card-group>
+
+  <h2 style="margin-bottom: 20px; margin-top: 20px; ">Responsables du site web</h2>
+  <b-card-group deck>
+    <ContactCard v-for="contact in websiteContacts" :key="contact.id" :contactModel="contact" />
+  </b-card-group>
 </template>
