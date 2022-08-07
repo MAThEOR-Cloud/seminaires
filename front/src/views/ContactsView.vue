@@ -12,19 +12,18 @@ export default defineComponent({
   data() {
     return {
       contacts: [] as ContactModel[],
-      coordinator: { id: 0, name: "Armand Ley", equip: "Mathématiques", mail: "armand.ley@uha.fr" } as ContactModel,
+      coordinator: { id: 1, name: "Armand Ley", equip: "Mathématiques", mail: "armand.ley@uha.fr" } as ContactModel,
       loading: true,
     }
   },
 	mounted () { 
 		this.contacts = [
-			{ id: 0, name: "Armand", equip: "IMTI", mail: "tets@mal.fo" },
-			{ id: 0, name: "Armand", equip: "IMTI", mail: "tets@mal.fo" },
-			{ id: 0, name: "Armand", equip: "IMTI", mail: "tets@mal.fo" },
-			{ id: 0, name: "Armand", equip: "IMTI", mail: "tets@mal.fo" },
-			{ id: 0, name: "Armand", equip: "IMTI", mail: "tets@mal.fo" },
-			{ id: 0, name: "Armand", equip: "IMTI", mail: "tets@mal.fo" },
-			{ id: 0, name: "Armand", equip: "IMTI", mail: "tets@mal.fo" },
+			{ id: 1, name: "Kerima Saleh Abakar", equip: "RT", mail: "kerima-saleh.abakar@uha.fr" },
+			{ id: 2, name: "Gautier Pialla", equip: "MSD", mail: "gautier.pialla@uha.fr" },
+			{ id: 6, name: "Riadh Abbessi", equip: "IMTI", mail: "riadh.abbessi@uha.fr" },
+			{ id: 3, name: "", equip: "MIAM", mail: "" },
+			{ id: 4, name: "", equip: "FOTI", mail: "" },
+			{ id: 5, name: "", equip: "OMEGA", mail: "" },
 		]
 		this.loading = false;
 	}

@@ -42,9 +42,9 @@ import { RouterLink, RouterView } from "vue-router";
         <img src="@/assets/Logo-Uha-blanc-300x66.png" />
       </div>
     </div>
-    <div id="footer-end">
+    <!--<div id="footer-end">
       COPYRIGHT © 2022 IRIMAS - INSTITUT DE RECHERCHE EN INFORMATIQUE, MATHÉMATIQUES, AUTOMATIQUE ET SIGNAL | UNIVERSITÉ DE HAUTE-ALSACE
-    </div>
+    </div>-->
   </footer>
 </template>
 
