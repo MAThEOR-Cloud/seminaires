@@ -10,9 +10,13 @@ export default {
     }
   },
   methods: {
-    parseTimestamp(timestamp: number) {
-      let date = new Date(timestamp*1000)
-      return this.formatDate(date)
+    parseTimestamp(timestamp: number | undefined) {
+      if ( timestamp) {
+        let date = new Date(timestamp*1000)
+        return this.formatDate(date)
+      } else {
+        return " "
+      }
     },
 
     padTo2Digits(num: number) {
