@@ -60,7 +60,7 @@ export default {
         <img src="@/assets/people-fill.svg" style="margin-right: 5px;" /> {{ seminarModel?.equip }}
       </b-card-text>
       <b-card-text style="display: flex; justify-content: flex-end;">
-      <b-link href="#" class="card-link"><img style="width: 32px;" src="@/assets/file-earmark-pdf.svg" /></b-link>
+      <b-link :href="'/abstracts/'+seminarModel?.id+'.pdf'" class="card-link" target="_blank"><img style="width: 32px;" src="@/assets/file-earmark-pdf.svg" /></b-link>
       <b-link href="#" class="card-link"><img style="width: 32px;" src="@/assets/easel2.svg" /></b-link>
       </b-card-text>
     </b-card-body>

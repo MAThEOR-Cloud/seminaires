@@ -16,7 +16,7 @@ import { RouterLink, RouterView } from "vue-router";
           <b-nav-item class="nav-item" to="/">Accueil</b-nav-item>
           <b-nav-item class="nav-item" to="/schedule">Programme</b-nav-item>
           <b-nav-item class="nav-item" to="/advise">Conseils</b-nav-item>
-          <b-nav-item class="nav-item" to="/access">Accès</b-nav-item>
+          <!-- <b-nav-item class="nav-item" to="/access">Accès</b-nav-item> -->
           <b-nav-item class="nav-item" to="/contacts">Contacts</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
