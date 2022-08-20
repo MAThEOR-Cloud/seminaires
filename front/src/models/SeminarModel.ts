@@ -6,4 +6,6 @@ export default class SeminarModel {
 	equip: string;
 	date: number;
 	duration: number;
+	abstract: boolean;
+	slides: boolean;
 }
