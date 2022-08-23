@@ -23,11 +23,9 @@ import { RouterLink, RouterView } from "vue-router";
     </b-navbar>
   </div>
 
-  <h1>Séminaire des doctorants IRIMAS</h1>
+  
+  <router-view />
 
-  <main>
-    <router-view />
-  </main>
 
   <footer>
     <div id="footer-info">
@@ -73,23 +71,6 @@ import { RouterLink, RouterView } from "vue-router";
   font-weight: bold;
 }
 
-h1 {
-  background-color: #386099;
-  text-align: center;
-  padding: 30px;
-  color: white;
-  font-size: 1.9em;
-  box-shadow: 0px 1px 2px #111111;
-  border-radius: 0px 0px 5px 5px;
-}
-
-main{
-  padding: 5%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  flex: auto;
-}
-
 #footer-info {
   border-radius: 5px 5px 0px 0px;
   background-color: #333333!important;
@@ -133,4 +114,23 @@ main{
   }
 }
 
+</style>
+
+<style>
+#title {
+  background-color: #386099;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  font-size: 1.9em;
+  box-shadow: 0px 1px 2px #111111;
+  border-radius: 0px 0px 5px 5px;
+}
+
+main{
+  padding: 5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  flex: auto;
+}
 </style>

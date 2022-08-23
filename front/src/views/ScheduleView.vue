@@ -24,8 +24,11 @@ export default defineComponent({
 </script>
 
 <template>
-  <div>
-	  <SeminarCard v-for="seminar in seminars" :key="seminar.id" :seminarModel="seminar" />
-	</div>
+  <h1 id="title">Programme</h1>
+  <main>
+    <div>
+  	  <SeminarCard v-for="seminar in seminars" :key="seminar.id" :seminarModel="seminar" />
+  	</div>
+  </main>
 </template>
 
