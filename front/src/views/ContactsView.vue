@@ -13,7 +13,7 @@ export default defineComponent({
     return {
       contacts: [] as ContactModel[],
       websiteContacts: [] as ContactModel[],
-      coordinator: { id: 1, name: "Armand Ley", equip: "Analyse", mail: "armand.ley@uha.fr" } as ContactModel,
+      coordinator: { id: 1, name: "Armand Ley", mail: "armand.ley@uha.fr" } as ContactModel,
       loading: true,
     }
   },
@@ -29,7 +29,7 @@ export default defineComponent({
 			{ id: 8, name: "", equip: "OMEGA", mail: "" },
 		]
     this.websiteContacts = [
-      { id: 1, name: "Thomas Jacumin", equip: "Analyse", mail: "thomas.jacumin@uha.fr" },
+      { id: 1, name: "Thomas Jacumin", mail: "thomas.jacumin@uha.fr" },
     ]
 		this.loading = false;
 	}

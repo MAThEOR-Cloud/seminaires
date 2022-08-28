@@ -18,7 +18,7 @@ export default {
       <template class="card-header" #header>
         <h4 class="mb-0">{{ contactModel?.name }}</h4>
       </template>
-      <b-card-text>
+      <b-card-text v-if="contactModel?.equip" >
         <img src="@/assets/people-fill.svg" style="margin-right: 5px;" /> {{ contactModel?.equip }}
       </b-card-text>
       <b-card-text>
