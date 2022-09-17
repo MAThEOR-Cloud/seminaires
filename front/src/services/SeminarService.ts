@@ -20,7 +20,7 @@ export default class SeminarService {
 	    	{ id: 4, title: "Conception d'une architecture supportant la technologie Li-Fi", author: "Louiza Hamada", equip: "RT", date: 1651745400, duration: 30, mail: "", abstract: true, slides: false, },
 	    	{ id: 3, title: "Tomographic diffraction microscopy", author: "Riadh Abbessi / Asemare Mengistie Taddese", equip: "IMTI", date: 1651141200, duration: 60, mail: "", abstract: true, slides: false, }, 
 	    	{ id: 2, title: "Network Anomaly Detection in IoT : from Data Efficiency to Enhancing QoS", author: "Mustafa Al Samara", equip: "RT", date: 1649326800, duration: 30, mail: "", abstract: true, slides: false, }, 
-	    	{ id: 1, title: "Transport optimal entropique", author: "Armand Ley", equip: "Analyse", date: 1648722000, duration: 60, mail: "armand.ley@uha.fr", abstract: true, slides: false, }, 
+	    	{ id: 1, title: "Transport optimal entropique", author: "Armand Ley", equip: "Analyse", date: 1648722000, duration: 60, mail: "armand.ley@uha.fr", abstract: true, slides: true, }, 
 	    ])
 		});//.then(x => new Promise(resolve => setTimeout(() => resolve(x), 1000)));
 	}
